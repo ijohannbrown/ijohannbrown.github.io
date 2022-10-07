@@ -1,38 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(180, 205, 230);
+}
+h1
+  {
+    text-align: center;
+  }
+h2
+  {
+    text-align: center;
+  }
+img{  
+height: 200px;  
+width: 325 px; 
+border: 2px solid #F9AC85;
+}  
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Where Exactly is Cory</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
+#table{
+  background-color: lightgrey;
+}
 
-  <table id="table">
-    <tr id="outerTable">
-      <th></th>
-      <th>Location</th>
-      <th>Preoccupation</th>
-      <th>Mood</th>
-    </tr>
-    <tr>
-      <th id="outerTable">Cory</th>
-      <th>Unknown</th>
-      <th>Disputed</th>
-      <th>Relatively positive</th>
-    </tr>
-    <tr>
-      <th id="outerTable">Non-Cory</th>
-      <th>Sometimes known</th>
-      <th>Depends</th>
-      <th>Variable</th>
-    </tr>
-  </table>
-
-  <br>
-  <br>
-  <h4>References</h4>
-  <img src="https://external-preview.redd.it/n32QohKqjUxlG4FjQbZ1cfPT0L0YYDZ5fWNh3QXS3tU.jpg?width=640&crop=smart&auto=webp&s=df4fa5f47004fb83c48e40c9cf923080adb8d7b9"alt="Scholarly Reference"/>
-    
-</body>
+#outerTable{
+  background-color: #F9AC85;
+}
