@@ -1,0 +1,65 @@
+body
+{
+  background-color: rgb(255, 230, 230);
+  color: rgb(255, 179, 179);
+  font: 75% georgia, sans-serif;
+  line-height: 1.88889;
+  margin: 0;
+  padding: 0;
+}
+
+h1
+{
+  text-align: center; 
+  font-size: 60px;
+  background: url(https://media.tenor.com/images/a37d863fdfaf6b36a8d5aff414bc883e/raw) no-repeat 50% 5%;
+}
+
+h2, h3, h4
+{
+  background-color: rgb(26, 174, 232);
+  max-width: 800px;
+}
+
+p
+{
+  max-width: 800px;  
+}
+
+a 
+{
+  color: hotpink;
+}
+
+a:visited 
+{ 
+	color: rgb(26, 174, 232);
+}
+
+.page-wrapper 
+{ 
+	background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgySxJQWUgw5Q_rH_xBWjLxRY7yslULSoDQA&usqp=CAU) no-repeat 91% 6%;
+	padding: 0 175px 0 20px;  
+	margin: 0; 
+	position: relative;
+}
+
+footer 
+{ 
+	text-align: center; 
+  font-size: 15px;
+  background: url(https://www.digitalcheck.com/wp-content/uploads/2020/08/man-computer-smiling-meme-500px.jpg) no-repeat 47% 20%;
+}
+
+footer a:link, footer a:visited 
+{ 
+	margin-right: 50px;  
+}
+
+.sidebar 
+{
+	margin-left: 600px; 
+	position: absolute; 
+	top: 310px; 
+	right: 91px;
+}
