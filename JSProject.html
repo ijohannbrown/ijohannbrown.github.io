@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Project</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h1 id = "header">Lonely?</h1>
+  
+  <h2>Older Polish Men (male) In Your Area Would Love to Get a Beer with You!</h2>
+  <br>
+  <h3>Entirely Platonic!<br>Entirely Platonic!<br>Entirely Platanzic!<br>Entirely Plasteunky!<br>Entirely Plaaaaaa!<br>Entirely Presoviet!<br>Entirely Platonic!<br>Entirely Platonic!</h3>
+  <br>
+  <h4>Enter Name to find Your Match!</h4>
+  <label for="fname">First name:</label>
+  <input type="text" id="input" name="nameInput">
+  <input type="submit" value="Submit" id = "name">
+
+  <div class = "center">  
+    <h1 style = "text-align: center" id = "currentMatch">Current Match:</h1>
+    <img src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAAB0CAMAAAArd/mVAAAADFBMVEX+/v7////m5ubR0dHBdideAAAAnElEQVR4nO3cQRGAAAzAsDH8ewYTfewuUVAFnXcPeWefQ/bPnTPkluSW5JbkluSW5JbkluSW5JbkluSW5JbkluSW5JbkluSW5JbkluSW5JbkluSW5JbkluSW5JbkluSW5JbkluSW5JbkluSW5JbkluSW5JbkluSW5JbkluSW5JbkluSW5JbkluSW5JbkluSW5Jbkli7mHrJza073AWDZBr207b2vAAAAAElFTkSuQmCC" alt = "polish man?" id = "centerImage">  
+  </div>
+
+  <div class = "facts">
+    <ul>
+      <lh>Poland Facts</lh>
+      <li>Most Number of Poles</li>
+      <li>Contains 2.3 Million Cows</li>
+      <li>Has a 6' 0" President</li>
+      <li>Can Be Respelled as Plodan</li>
+      <li>Weighs more than thousands<br>of pounds</li>
+      <li>Some men are named Mikolaj</li>
+      <li>Has one of the economies<br>in Northern Europe</li>
+      <li>Puts some of their flags<br>on poles</li>
+      <li>Apparently they invented<br>vodka</li>
+      <li>Entirely contained within<br>Poland's borders</li>
+    </ul>
+  </div>
+
+  <script>
+    document.getElementById("name").addEventListener("click", function() {
+      document.getElementById("currentMatch").innerHTML = "No Matches";
+    });
+  </script>
+  
+</body>
+</html>
