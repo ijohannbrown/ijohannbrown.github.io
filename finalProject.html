@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Problem Solver</title>
+  <link href="finalProject.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id = "everything">
+    <h1>Problem Solver (free)</h1>
+    <h4>Enter Problem</h4>
+    <br>
+    <input type = "text" id = "input">
+    <br> <br>
+    <h4 id = "solution">Ж</h4>
+    <br><br>
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURExUYHSggGBolGxUVITEhJSk3Li4uFx8/ODMtNyg5OisBCgoKDQ0NDw0NDisZFRkrLSsrLS04Kys3LTcrKzcrKy03KystKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAQMAwgMBIgACEQEDEQH/xAAWAAEBAQAAAAAAAAAAAAAAAAAAAQf/xAAVEAEBAAAAAAAAAAAAAAAAAAAAAf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/AMOAAAAAFABAAAAAAAAAABUUEUARQFAARQUQBAAABQQFURUVBAUEAAVFAAUAEQAFAFBFARQBBQEVFABEFABBQABQAAAAAEABQBAAUBFAEABRBAAFQAVAFEVQEEFBAUAQAVQAAAAABFAQABUEAAQAAAUUERVAAAAAUAAEVAVFAQAQAQAAAAAAAAFEAUBUUBABVAAEVAFEAARAAAAAAAAAAAAFEUAAABQAFAABFBAAAEQAAAAAAAAABQFBFEAAUAAAUAAQAQARQAQAAAAAAFQFAUAEABVAAAAEUARQEAAAQABAFBAAFQAUAAAABQAABQAARQEFBEFBUBURAFAABQAAFAAAAAAAAAAAAAAAARQEQUARQVFBAAUAEABQAQAFAAAAAAABAAUAAAEABQAAAAAAAAAAAAAAAQAFAAAAAAAAAAAAAAAAFRUABQQAAAAAAAAAAAAAAAAAAAAUAFqAgoCCgIKAgqAAoIKAgqACgIKAgoACgiihEqKAgAIoAigKACAAFAQAFEUAAACAAtUFAFR//9k=" alt="monkey fall" id = "image">
+  </div>
+<script>
+  document.getElementById("input").addEventListener("keypress", function() {
+    if (event.key === "Enter") {
+      document.getElementById("solution").innerHTML = "Loading...";
+      document.getElementById("image").src="https://media.tenor.com/T8vfxqQ8ilcAAAAM/monkey-falling-ape-falling.gif";
+
+    function calculating() {
+      document.getElementById("solution").innerHTML = "Calculating...";
+    }
+
+    function pondering() {
+      document.getElementById("solution").innerHTML = "Pondering...";
+    }
+
+    function realizing() {
+      document.getElementById("solution").innerHTML = "Realizing...";
+    }  
+
+    function despairing() {
+      document.getElementById("solution").innerHTML = "Despairing...";
+    }  
+      
+    function solution() {
+      document.getElementById("solution").innerHTML = "There are no solutions.";
+    }
+  
+    function monkey() {
+      document.getElementById("everything").innerHTML = "<h4>Monkey.</h4>";
+    }
+  
+    function reset() {
+      document.getElementById("everything").innerHTML = "<h4></h4>";
+    }
+
+      //Ajax --> gets html file with map in it
+
+    const offerCalculating = setTimeout(calculating, 3000);
+    const offerPondering = setTimeout(pondering, 4000);
+    const offerRealizing = setTimeout(realizing, 4800);
+    const offerDespairing = setTimeout(despairing, 5400);
+    const offerSolution = setTimeout(solution, 6150);
+    const offerDestruction = setTimeout(monkey, 7400);
+    const offerMonkey = setTimeout(reset, 9000);
+    }
+  });
+</script>
+</body>
+
+</html>
