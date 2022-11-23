@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Shark Sightings'],
+          ['Germany', 156],
+          ['United States', 2187],
+          ['Brazil', 1677],
+          ['Canada', 83],
+          ['France', 556],
+          ['RU', 50],
+          ['Australia', 10081.7],
+          ['Egypt', 3],
+          ['Zambia', 4762],
+          ['Mexico', 2387],
+          ['New Zealand', 16],
+          ['Moldova', 6008.6],
+          ['Greenland',4503],
+          ['Japan', 1294],
+          ['Bolivia', 466],
+          ['Ukraine',777],
+          ['Uruguay', 1.3],
+          ['Paraguay', 0],
+          ['Argentina', 870],
+          ['Chad',9000.1],
+          ['Costa Rica', 15],
+          ['Guatemala', 145],
+          ['Nicaragua', 203],
+          ['United Kingdom', 506],
+          ['Ireland', 333],
+          ['Venezuala', 607],
+          ['Bolivia', 555],
+          ['India', 1780],
+          ['Chile', 1057],
+          ['Peru', 660],
+          ['Ecuador', 245],
+          ['Colombia', 340],
+          ['Venezuela', 6],
+          ['Guyana', 104],
+          ['Cuba', 4],
+          ['Dominican Republic', 18],
+          ['Jamaica', 13],
+          ['Haiti', 1700],
+          ['Papua New Guinea', 1356],
+          ['Indonesia', 2778],
+          ['Suriname', 168],
+          ['French Guiana', 67],
+          ['Guatemala',2900],
+          ['Nicaruga', 4078],
+          ['Puerto Rico',12],
+          ['Algeria',999],
+          ['China', 905],
+          ['Mongolia', 68],
+          ['Kazakhstan', 1],
+          ['Saudi Arabia', 805],
+          ['Spain', 406],
+          ['Portugal', 467],
+          ['Norway', 1706],
+          ['Sweden', 43],
+          ['Finland', 6000],
+          ['Libya',1543],
+          ['Sudan',78],
+          ['Iran',333],
+          ['Pakistan',88],
+          ['Ethiopia',25],
+          ['Tanzania',77],
+          ['Turkey', 95],
+          ['Thailand',347],
+          ['Indonesia',4444],
+          ['Morocco', 956],
+          ['Western Sahara', 678],
+          ['Mauritania', 213],
+          ['The Gambia', 6987],
+          ['Senegal', 300],
+          ['Guinea-Bissau', 130],
+          ['Guinea', 324],
+          ['Sierra Leone', 187],
+          ['Liberia', 202],
+          ['South Korea', 132],
+          ['South Africa', 0],
+          ['Botswana', 1789],
+          ['Madagascar', 89], 
+          ['Kenya', 993],
+          ['Somalia', 1506],
+          ['Nigeria', 670],
+          ['Angola', 544],
+          
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <link href="finalProject.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>MAP FOR MONKEY</h1>
+    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
