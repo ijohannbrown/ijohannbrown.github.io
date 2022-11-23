@@ -1,0 +1,22 @@
+html, body {
+  background-color: black;
+  height: 98%;
+  width: 99%;
+}
+
+h1, h4 {
+  text-align: center;  
+  color: white;
+}
+
+#input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
