@@ -50,10 +50,14 @@
     }
   
     function reset() {
-      document.getElementById("everything").innerHTML = "<h4></h4>";
+      //document.getElementById("everything").innerHTML = "<h4></h4>";
+      let getMap = new XMLHttpRequest();
+      getMap.getEventListener("load", function() {
+        everything.innherHTML = getMap.response;  
+      })
+      getMap.open("GET", "ajaxMap.html")
+      getMap.send();
     }
-
-      //Ajax --> gets html file with map in it
 
     const offerCalculating = setTimeout(calculating, 3000);
     const offerPondering = setTimeout(pondering, 4000);
