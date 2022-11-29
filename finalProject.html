@@ -48,15 +48,20 @@
     function monkey() {
       document.getElementById("everything").innerHTML = "<h4>Monkey.</h4>";
     }
-  
+
     function reset() {
-      //document.getElementById("everything").innerHTML = "<h4></h4>";
-      let getMap = new XMLHttpRequest();
-      getMap.getEventListener("load", function() {
-        everything.innherHTML = getMap.response;  
-      })
-      getMap.open("GET", "ajaxMap.html")
-      getMap.send();
+      document.getElementById("everything").innerHTML = "<button id = 'button' onclick = 'getMap()'>Get Fact (bird)!<br>(button)</button>";
+      button.addEventListener("click", getMap);
+    }
+
+    function getMap() {
+      fetch("https://meowfacts.herokuapp.com/")
+      .then((response) => response.json())
+      .then((birdFact) => addBirdFact(birdFact.data))
+    }
+
+    function addBirdFact(data) {
+      document.getElementById("everything").innerHTML = data;
     }
 
     const offerCalculating = setTimeout(calculating, 3000);
@@ -65,7 +70,7 @@
     const offerDespairing = setTimeout(despairing, 5400);
     const offerSolution = setTimeout(solution, 6150);
     const offerDestruction = setTimeout(monkey, 7400);
-    const offerMonkey = setTimeout(reset, 9000);
+    const offerMonkey = setTimeout(reset, 80);
     }
   });
 </script>
